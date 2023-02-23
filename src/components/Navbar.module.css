@@ -1,0 +1,52 @@
+.list {
+    display:flex;
+    gap: 50px;
+    list-style:none;
+}
+
+.list li {
+    position: relative;
+    width: 100%;
+    font-size:16px;
+}
+
+.list a {
+    text-decoration: none;
+}
+
+.list li::after {
+    position: absolute;
+    content: '';
+    height: 1px;
+    width: 0;
+    bottom: -8px;
+    left: 0;
+    background: #ffffff;
+    transition: 0.4s;
+}
+
+.list li:hover::after {
+    width: 100%;
+}
+
+.navbar {
+    top: 0;
+    z-index: 1;
+    transition: top 1s;
+    box-sizing: border-box;
+  }
+
+
+.shadow {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: none;
+}
+
+.color {
+    color:rgb(1, 8, 21);
+}
+
+

@@ -1,0 +1,16 @@
+body {
+  margin: 0;
+  width: '100%';
+  font-family: 'Oswald', sans-serif;
+}
+
+
+html {
+  scroll-behavior: smooth;
+
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+

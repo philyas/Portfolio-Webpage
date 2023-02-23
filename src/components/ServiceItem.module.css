@@ -1,0 +1,20 @@
+.box {
+   /* background: linear-gradient(35deg, rgb(107, 20, 184), rgb(241, 224, 242)); */
+   background: linear-gradient(35deg, rgb(9, 112, 202), rgb(220, 238, 254)); 
+    box-shadow: 0 0 5px 2px rgb(24, 101, 179);
+}
+
+.stack p {
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-shadow: 0 0 4px rgb(28, 54, 61);
+    font-size: 17px;
+}
+
+.stack h1 {
+    padding: 0;
+    margin: 0;
+    color: white;
+    text-shadow: 0 0 4px rgb(4, 53, 64)
+}
