@@ -1,10 +1,11 @@
 .stacks {
-    font-size: 5rem;
-    background: linear-gradient(to right,rgb(130, 220, 255),rgb(255, 255, 255) 90%);
+    font-size: 3rem;
+    background: linear-gradient(to right,rgb(24, 34, 122),rgb(10, 117, 189) 90%);
     background-clip:text;
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(1px 1px 1px rgb(255, 255, 255));
+    filter: drop-shadow(1px 1px 1px rgb(2, 0, 8));
     margin: 1em;
     text-align: center;
+    font-family: 'Black Ops One', cursive;
 }

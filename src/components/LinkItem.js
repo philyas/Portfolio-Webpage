@@ -3,7 +3,7 @@ import classes from './LinkItem.module.css'
 import { useRef } from 'react';
 import {useInView} from 'framer-motion'
 
-function LinkItem({source, description, url, scale}) {
+function LinkItem({source, description, url, scale, text}) {
     const ref = useRef(null)
     const isInView = useInView(ref, {once:true})
 
@@ -28,7 +28,7 @@ function LinkItem({source, description, url, scale}) {
                 <Box alignItems={'center'} justifyContent={'center'}>
                     <Stack sx={{width:{lg:400, xs:200}}} height={150}  style={{alignItems:'center', justifyContent:'center'}}>
                         <h1 className={classes.title} style={{margin:0}}>{description}</h1>
-                        <a href={url} style={{textDecoration:'none'}}><p className={classes.content} style={{margin:0, color:'lightgray'}}>{url}</p></a>
+                        <a href={url} style={{textDecoration:'none'}}><p className={classes.content} style={{margin:0, color:'lightgray'}}>{text}</p></a>
                     </Stack>
                 </Box>
            </Grid>

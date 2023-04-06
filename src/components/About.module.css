@@ -1,12 +1,13 @@
 .aboutme {
-    font-size: 5rem;
-    background: linear-gradient(to right,rgb(130, 220, 255),rgb(255, 255, 255) 90%);
+    font-size: 3rem;
+    background: linear-gradient(to right,rgb(24, 34, 122),rgb(10, 117, 189) 90%);
     background-clip:text;
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
-    filter: drop-shadow(1px 1px 1px rgb(255, 255, 255));
+    filter: drop-shadow(1px 1px 1px rgb(2, 0, 8));
     margin: 1em;
     text-align: center;
+    font-family: 'Black Ops One', cursive;
 }
 
 .aboutbox {
@@ -16,8 +17,10 @@
 }
 
 .aboutbox p {
-   /* color: rgb(25, 98, 163); */
-   color: white;
-   filter: drop-shadow(0 0 30px black);
-    font-size: 1.8rem;
+    background: linear-gradient(to right,rgb(1, 15, 29),rgb(3, 8, 37) 90% );
+    background-clip:text;
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+   filter: drop-shadow(0 0 0px rgb(2, 1, 17));
+   font-size: 21px;
 }

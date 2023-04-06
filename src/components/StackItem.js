@@ -1,4 +1,4 @@
-import { Box } from '@mui/system';
+import { Box } from '@mui/material';
 import classes from './StackItem.module.css'
 import { useRef } from 'react';
 import {useInView} from 'framer-motion'
@@ -17,15 +17,17 @@ function StackItem({url,color1,color2, percentage, title}) {
             <Box
             ref={ref}
             borderRadius={3}
+            boxShadow={7}
             sx={{
-                background:`linear-gradient(45deg,${color1},${color2})`, filter:`drop-shadow(0 0 1px ${color1} )`,
+                background:`linear-gradient(45deg,${color1},${color2})`, 
                 transform: isInView ? "none" : "translateY(50px)",
                 opacity: isInView ? 1 : 0,
                 transition: '1s'
-            
             }}
             padding={3}
-            width={100} height={100} bgcolor={'green'}>
+            width={100} 
+            height={100} 
+            >
                 <img className={classes.icon} width={'100%'} height={'auto'} alt='stack' src={url}></img>
             </Box>
         </Tooltip>

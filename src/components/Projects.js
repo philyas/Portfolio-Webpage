@@ -119,7 +119,7 @@ function Projects() {
     return(
         <div id='projects' style={{textAlign:'center', marginTop:'20rem'}}>
             <Box position={'relative'} width={'100%'} overflow='hidden'>
-                <h1 className={classes.portfolioheader}>Web App Projects</h1>
+                <h1 className={classes.portfolioheader}>WEB APPS</h1>
         
           
             </Box>

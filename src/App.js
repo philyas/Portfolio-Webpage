@@ -17,30 +17,11 @@ import Footer from './components/Footer';
 function App() {
   const [count,setCount] = useState(0)
 
-  const [scrollTop, setScrollTop] = useState(0);
-  const containerRef = useRef(null);
-
-  
-  useEffect(() => {
-
-    const currentContainer = containerRef.current
-    const handleScroll = () => {
-      setScrollTop(currentContainer.scrollTop);
-    };
-    currentContainer.addEventListener('scroll', handleScroll);
-
-    return () => {
-      currentContainer.removeEventListener('scroll', handleScroll);
-    };
-  }, [scrollTop]);
-
-
   return (
    <ContextData.Provider value={[count,setCount]}>
     <div className="App">
-        <Box  ref={containerRef} sx={{width:'100%', height:'100vh', overflowY:'scroll', scrollBehavior:'smooth'}}>
-          <Background></Background>
-          <Navbar scrollValue={scrollTop}></Navbar>
+        <Box>
+          <Navbar></Navbar>
           <Home></Home>
           <About></About>
           <Stacks></Stacks>

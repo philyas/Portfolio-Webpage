@@ -19,7 +19,7 @@ function About() {
                             transition: '1s 0.5s',
                            
                     }} mb={25} className={classes.aboutbox}>
-                        <h1 className={classes.aboutme}>About Me</h1>
+                        <h1 className={classes.aboutme}>ABOUT ME</h1>
                         
                         <p>As a self-taught software developer, I bring a unique mix of motivation, dedication, and passion for problem-solving and innovation to every project I work on. My expertise has been acquired through a variety of online courses, tutorials, and personal projects, allowing me to build applications using technologies such as React, Node.js, MongoDB, and PostgreSQL.</p>
 
@@ -29,7 +29,6 @@ function About() {
 
 <p>In conclusion, I am a highly motivated self-taught software developer, enthusiastic to take on new challenges and continue my growth in this field. If you're looking for a solution-focused and innovative developer, I would be delightful to discuss how I can contribute to your project.</p>
                     
-                        <a href='#contact' style={{textDecoration:'none'}}><Button style={{width:'40%', position:'relative', background:'lightblue', fontWeight:'bold'}} variant='contained' >CONTACT ME</Button></a>
                     </Box>
                 </Grid>
 

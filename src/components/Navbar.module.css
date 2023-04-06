@@ -7,7 +7,7 @@
 .list li {
     position: relative;
     width: 100%;
-    font-size:16px;
+    font-size:14px;
 }
 
 .list a {
@@ -19,14 +19,29 @@
     content: '';
     height: 1px;
     width: 0;
-    bottom: -8px;
+    bottom: -3px;
     left: 0;
-    background: #ffffff;
+    background: #000000;
     transition: 0.4s;
 }
 
 .list li:hover::after {
     width: 100%;
+}
+
+.listmobile {
+    padding:0 3rem;
+    list-style:none;
+    font-size:1rem
+}
+
+.listmobile > a {
+    text-decoration: none;
+    font-family: 'Black Ops One', cursive;
+}
+
+.listmobile li {
+    padding: 1rem;
 }
 
 .navbar {

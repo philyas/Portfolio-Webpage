@@ -1,13 +1,13 @@
 
 .title {
-    background: white;
+    background: rgb(1, 2, 20);
     background-clip:text;
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;
 }
 
 .content {
-    background: white;
+    background: rgb(1, 2, 20);
     background-clip:text;
     -webkit-background-clip:text;
     -webkit-text-fill-color: transparent;

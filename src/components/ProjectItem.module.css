@@ -1,8 +1,12 @@
 .box {
     background: white;
-    filter: drop-shadow(0 0 3px rgb(250, 250, 250));
+    filter: drop-shadow(0 0 12px rgb(221, 221, 221));
     padding: 1rem;
     border-radius: 1rem;
+    border-style: solid;
+    border-color: rgb(207, 207, 207);
+    border-width: 1px;
+    box-shadow: 0 0 15px 2px rgb(141, 141, 141);
 }
 
 .boximg {

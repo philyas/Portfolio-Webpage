@@ -30,7 +30,7 @@ function MobileItem({source, app, title}) {
                   opacity: isInView ? 1 : 0,
                   transition: '2s',
             }} position={'relative'} bgcolor={'green'} width={180} height={400} mt={10} >
-                <img style={{position:'absolute',left:0,top:0, transform:'scale(1.2)'}} alt='src' src={source}></img>
+                <img style={{position:'absolute',left:0,top:0, transform:'scale(1.2)', filter:'drop-shadow(0 4px 2px black)'}} alt='src' src={source}></img>
                 <Box style={{overflow:'hidden', position:'absolute',left:0,top:0, width:'204px', height:'395px' , borderRadius:'1rem' }} >
                         {app.map((img,index)=> <img key={index} style={{transition:'1s', borderRadius:'1rem' , position:'absolute', left:0, transform: `translateY(${index*395-(count*395)}px)`, width:190, height:395}}   alt='app' src={img}></img> )}
                 </Box>

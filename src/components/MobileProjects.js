@@ -25,8 +25,8 @@ function MobileProjects() {
 
     return(
         <div style={{marginTop:'25rem', textAlign:'center'}}>
-        <h1 className={classes.header}>Mobile Projects</h1>
-        <p style={{color:'white', fontSize:'18px'}}>Click &#x2193;and &#x2191; to scroll</p>
+        <h1 className={classes.header}>MOBILE APPS</h1>
+        <p style={{color:'gray', fontSize:'18px'}}>Click &#x2193;and &#x2191; to scroll</p>
         <Grid  gap={15} container style={{alignItem:'center', justifyContent:'center'}}>
            {projects.map((item,index)=> <Grid p={5} key={index} item display={'flex'} alignItems='center' justifyContent={'center'} >
                <MobileItem title={item.title} source={item.name} app={item.app}></MobileItem>

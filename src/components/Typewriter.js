@@ -6,9 +6,10 @@ const Typewriter = ({ text }) => {
     const [charIndex, setCharIndex] = useState(0);
 
     const currentTextStyle = {
-        fontSize:{xs:40, lg:50, xl:80},
+        fontSize:{xs:30, sm:40, md:40, lg:50, xl:70},
         color:'white',
-        fontWeight:'bold'
+        fontWeight:'bold',
+        fontFamily:'Black Ops One, cursive'
     }
 
     useEffect(() => {
