@@ -6,6 +6,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import {Drawer} from '@mui/material';
 import lalogo from './assets/lalogo.png'
 import lalogoblue from './assets/lalogoblue.png'
+import {Avatar} from '@mui/material';
 
 function Navbar() {
   const [open, setOpen] = useState(false)
@@ -48,10 +49,13 @@ function Navbar() {
       background: 'white',
       width:'100%',
       zIndex:1,
+      left:0,
+      padding:0,
       boxShadow:shadow
     },
     listitem: {
-      color:'rgb(1,20,19)'
+      color:'black',
+      fontFamily:"Poppins, Sans-serif"
     },
     header: { margin:'0px 20px', color:'rgb(1,20,19)' }
   }
@@ -59,21 +63,21 @@ function Navbar() {
   return (
     <motion.div className={classes.navbar} style={styles.active} initial={{opacity:0}} animate={{opacity:1}} transition={{duration:1, delay:2}}>
       <Stack>
-        <Box sx={{width:'100%', paddingY:1}}>
+        <Box sx={{maxWidth:'100%', paddingY:1, paddingX:2}}>
             <Grid container alignItems={'center'} justifyContent={'space-between'} >
                 <Grid item md={4} >
                     <Box>
-                       <img style={{width:90,height:40}} src={lalogoblue}></img>
+                      <Avatar sx={{ background:'lightgray' }}>PN</Avatar>
                     </Box>
                 </Grid>
-                {windowSize[0] > 800 ?  <Grid item md={4} sx={{mr:{lg:2, sm:15, xs:20}}}>
-                  <Box>
+                {windowSize[0] > 800 ?  <Grid item md={4} alignItems={'center'} justifyContent={'center'}>
+                  <Box alignItems={'center'} justifyContent={'center'}>
                       <ul className={classes.list} >
-                        <a  href='#home'><li style={styles.listitem}>Home</li></a>
-                        <a href='#about'><li style={styles.listitem} >About</li></a>  
-                        <a href='#mystacks'><li style={styles.listitem}>Stacks</li></a>
-                        <a href='#projects'><li style={styles.listitem}>Portfolio</li></a>
-                        <a href='#contact'><li style={styles.listitem}>Contact</li></a>
+                        <a  href='#home'><li style={styles.listitem}>HOME</li></a>
+                        <a href='#about'><li style={styles.listitem} >ABOUT</li></a>  
+                        <a href='#mystacks'><li style={styles.listitem}>STACK</li></a>
+                        <a href='#projects'><li style={styles.listitem}>PROJECTS</li></a>
+                        <a href='#contact'><li style={styles.listitem}>CONTACT</li></a>
                  
                       </ul>
                   </Box>

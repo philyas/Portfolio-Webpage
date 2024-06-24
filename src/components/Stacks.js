@@ -96,8 +96,8 @@ function Stacks() {
 
     return (
       <div id='mystacks' style={{ textAlign:'center'}}>
-        <h1 className={classes.stacks}>TECH STACK</h1>
-        <Grid container gap={2} display={'flex'} alignItems={'center'} justifyContent={'center'}>
+        <h1 className={classes.stacks}>Skills</h1>
+        <Grid container padding={3} gap={2} display={'flex'} alignItems={'center'} justifyContent={'center'}>
            {stacks.map((item,index)=> <Grid item p={5} key={index} alignItems={'center'} justifyContent={'center'} display='flex'> 
                     <StackItem title={item.title} percentage={item.percentage} url={item.name} color1={item.color1} color2={item.color2}></StackItem>
            </Grid> )}

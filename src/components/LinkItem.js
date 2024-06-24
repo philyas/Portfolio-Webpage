@@ -28,7 +28,7 @@ function LinkItem({source, description, url, scale, text}) {
                 <Box alignItems={'center'} justifyContent={'center'}>
                     <Stack sx={{width:{lg:400, xs:200}}} height={150}  style={{alignItems:'center', justifyContent:'center'}}>
                         <h1 className={classes.title} style={{margin:0}}>{description}</h1>
-                        <a href={url} style={{textDecoration:'none'}}><p className={classes.content} style={{margin:0, color:'lightgray'}}>{text}</p></a>
+                        <a href={url} style={{textDecoration:'none'}}><p className={classes.content} style={{margin:0, color:'black'}}>{text}</p></a>
                     </Stack>
                 </Box>
            </Grid>

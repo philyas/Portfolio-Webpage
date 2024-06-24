@@ -1,11 +1,8 @@
 .stacks {
-    font-size: 3rem;
-    background: linear-gradient(to right,rgb(24, 34, 122),rgb(10, 117, 189) 90%);
-    background-clip:text;
-    -webkit-background-clip:text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(1px 1px 1px rgb(2, 0, 8));
+    font-size: 2rem;
     margin: 1em;
+    font-weight: 800;
     text-align: center;
-    font-family: 'Black Ops One', cursive;
+    font-family: "Abril Fatface", serif;
+    color: #463b8a;
 }

@@ -14,7 +14,7 @@ function Links() {
 
     return(
         <div id="contact" style={{textAlign:'center', marginTop:'20rem'}}>
-        <h1 className={classes.header} >CONTACT</h1>
+        <h1 className={classes.header} >Contact Details</h1>
         <Grid container sx={{width:{xs:300, sm:500, lg:1100, xl:1400}}} margin={'auto'} justifyContent={'center'} alignItems={'center'} spacing={4}>
          {links.map((link,index)=>  <Grid key={index} item lg={3} justifyContent={'center'} alignItems={'center'}>
             <LinkItem source={link.name} description={link.descripton} url={link.url} text={link.text} scale={link.scale}></LinkItem></Grid> )}

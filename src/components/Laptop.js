@@ -1,7 +1,7 @@
-import { Canvas, useFrame, extend, useThree, useLoader} from "@react-three/fiber"
+import { Canvas, useFrame, extend, useThree, useLoader } from "@react-three/fiber"
 import { useState, useRef, Suspense, useEffect } from "react"
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
-import { Stars, Environment} from "@react-three/drei";
+import { Stars } from "@react-three/drei";
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 
 const path =  "./models/scene.gltf"
@@ -30,7 +30,7 @@ const Character = (props)=> {
 const Ground = ()=> {
   return(
     <mesh rotation-x={-Math.PI / 2} receiveShadow >
-    <planeBufferGeometry attach={'geometry'} args={[100, 100,100]} />
+    <planeGeometry attach={'geometry'} args={[100, 100,100]} />
     <meshPhongMaterial attach={'material'}  color={'white'} ></meshPhongMaterial>
  </mesh>
   )
@@ -53,10 +53,12 @@ function CameraControls({cameraRef}) {
   const Laptop = ()=> {
     return(
      <Canvas  shadows camera={{near:0.1 , position:[1,0.8,0]}} >
-         <Suspense fallback={null}>
 
+         <Suspense fallback={null}>
+                 
+         <ambientLight intensity={1} />
             <directionalLight intensity={9} position={[0,1,0]} castShadow ></directionalLight>
-            <Environment preset="apartment"></Environment>
+       
             <Character></Character>
             <Ground></Ground>
             <CameraControls></CameraControls>

@@ -1,13 +1,16 @@
 .list {
     display:flex;
-    gap: 50px;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
     list-style:none;
 }
 
 .list li {
     position: relative;
     width: 100%;
-    font-size:14px;
+    font-size:11px;
+    color: rgb(82, 82, 82) !important;
 }
 
 .list a {
@@ -30,18 +33,21 @@
 }
 
 .listmobile {
-    padding:0 3rem;
+    padding:0 4rem;
     list-style:none;
-    font-size:1rem
+    font-size:1rem;
 }
 
 .listmobile > a {
     text-decoration: none;
-    font-family: 'Black Ops One', cursive;
+    margin: 1em;
+    font-weight: 200;
+
+    font-family: "Poppins", Sans-serif
 }
 
 .listmobile li {
-    padding: 1rem;
+    padding: 0rem;
 }
 
 .navbar {
@@ -61,7 +67,7 @@
 }
 
 .color {
-    color:rgb(1, 8, 21);
+    color:rgb(9, 21, 44);
 }
 
 

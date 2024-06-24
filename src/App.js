@@ -7,10 +7,9 @@ import Projects from './components/Projects';
 import MobileProjects from './components/MobileProjects';
 import Services from './components/Services';
 import Links from './components/Links';
-import { useState, useEffect, useRef } from 'react';
+import { useState } from 'react';
 import {ContextData} from './components/CountContext/CountContext'
 import { Box } from '@mui/material';
-import Background from './components/Background';
 import Footer from './components/Footer';
 
 
@@ -23,7 +22,6 @@ function App() {
         <Box>
           <Navbar></Navbar>
           <Home></Home>
-          <About></About>
           <Stacks></Stacks>
           <Services></Services>
           <Projects></Projects>

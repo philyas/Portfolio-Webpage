@@ -99,27 +99,14 @@ function Projects() {
         text:'This is a prototype for Billard Palace in Dieburg, which was created for more automation in accounting.'
         , url:"empty"
         ,stacks:[reactlogo,muilogo,nodejs, postgres]
-         },
-       
-        {title:'Web Timetracker',source:time3, images:[time1,time2,time3,time4,time5],
-         text:`This timetracker was originally created for an order picking - company to track employees in different locations. Every location has one responsibile employee who track their location.
-         Very simple user interface and simple usage in order to track all employees working hours.
-         `, url:'https://script.google.com/macros/s/AKfycbxn3e-IsUuCm1KCs6a9VUbzy-cIEB-p9_sVLziXkEqjUYjBTw_OSJlx3eONfZWrqjaf/exec'
-        , stacks:[htmllogo,css,javascriptlogo,appscript, googlesheets]
-        },
-       
-        {title:'Fuel Tracker',source:fuel4, images:[fuel1,fuel2,fuel3,fuel4,fuel5, fuel6, fuel7, fuel8, fuel9],
-         text:'A little project for my neighbour, who registers all data in his note app. The idea of this app is that, he types in the current km each time he fills fuel, and he always has an overview of all the data, including calculations.'
-           , url:'https://script.google.com/macros/s/AKfycbxnrqKu8O465TD3b6mJoK0laNaROg_up9_ZSDSu4Xc41TBe3v3_Lh4gDgG8F_dbs6uK/exec'
-         ,stacks:[htmllogo,css,javascriptlogo,appscript, googlesheets]
-        },
+         }
     ]
 
 
     return(
         <div id='projects' style={{textAlign:'center', marginTop:'20rem'}}>
-            <Box position={'relative'} width={'100%'} overflow='hidden'>
-                <h1 className={classes.portfolioheader}>WEB APPS</h1>
+            <Box position={'relative'} width={'100%'} overflow='hidden' padding={3}>
+                <h1 className={classes.portfolioheader}>Web Apps</h1>
         
           
             </Box>
