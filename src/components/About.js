@@ -38,10 +38,6 @@ function About() {
                  
                     </Box>
                 </Grid>
-
-           
-
-
             </Grid>
         </div>
     );
