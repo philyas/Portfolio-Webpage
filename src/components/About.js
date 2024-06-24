@@ -31,7 +31,7 @@ function About() {
 
 <p>My understanding of front-end development is well-rounded, and I am proficient in HTML, CSS, JavaScript, and CSS frameworks such as Bootstrap and Material-UI. I am always looking to improve my skills and stay up-to-date with the latest technologies, and my ability to learn quickly and my creative thinking ensure that I can accept any challenge that comes my way.</p>
 
-<p>My personal projects include a patient management app, webpages, employee time tracker etc. Whether working independently or as part of a team, I am confident in my ability to contribute to any project and to deliver results.</p>
+<p>My personal projects include a patient management app, webpages, an employee time tracker etc. Whether working independently or as part of a team, I am confident in my ability to contribute to any project and to deliver results.</p>
                     <Button variant='contained' sx={{background:'#463b8a'}}>
                         Contact Me
                     </Button>
