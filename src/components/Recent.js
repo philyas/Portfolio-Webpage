@@ -2,6 +2,7 @@
 import React from 'react';
 import { Box, Typography, Card, CardContent, Grid, Button } from '@mui/material';
 import classes from './Recent.module.css'
+import eule from './assets/eulelogo.png'
 
 const Recent = () => {
   return (
@@ -24,13 +25,18 @@ const Recent = () => {
         <Grid item>
             <Box className={classes.header} sx={{marginTop:'5%',flexDirection:'column', width:'100%', display:'flex', justifyContent:'center', alignItems:'center'}}>
                 <Box className={classes.card}>
-                  <Box sx={{ width: 260, height: 450, background: 'linear-gradient(140deg, rgb(247, 229, 255), rgb(37, 8, 44))', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
-                    <Box sx={{ flex: 1 , padding:2}}>
+                  <Box sx={{ width: 260, height: 450, background: 'linear-gradient(140deg, rgb(247, 229, 255) , rgb(37, 8, 44))', display: 'flex', flexDirection: 'column', justifyContent: 'space-between' }}>
+                    <Box sx={{ flex: 1 , padding:1}}>
+                        <h2>Wonder Stories</h2>
                         <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. 
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem.
                         </p>
                     </Box>
-                    <Box sx={{ display: 'flex', justifyContent: 'center', mb: 2 }}>
+                   
+                    <Box sx={{ display: 'flex', flexDirection:'column', alignItems:'center', justifyContent: 'center', mb: 2 }}>
+                        <Box sx={{ display: 'flex', width:120, justifyContent: 'center', mb: 2 }}>
+                            <img style={{width:'100%'}} src={eule}></img>
+                        </Box>
                         <Button variant='contained' color="secondary">
                             Download
                         </Button>

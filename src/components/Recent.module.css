@@ -7,6 +7,15 @@
     color: #463b8a;
 }
 
+.header h2 {
+    font-weight: 800;
+    text-align: center;
+    font-family: "Abril Fatface", serif;
+    color: white;
+    text-shadow: 0 0 3px rgb(0, 0, 0);
+    margin: 0;
+}
+
 .card {
     background: linear-gradient(140deg, rgb(247, 229, 255), rgb(37, 8, 44)); 
     box-shadow: 0 5px 6px 2px rgb(202, 202, 202);
@@ -19,6 +28,7 @@
 }
 
 .card p {
-    color: white;
+    color: white;;
     font-size: 16px;
+    text-shadow: 0 0 10px black;
 }
