@@ -2,7 +2,6 @@ import './App.css';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import Stacks from './components/Stacks';
-import About from './components/About';
 import Projects from './components/Projects';
 import MobileProjects from './components/MobileProjects';
 import Services from './components/Services';
@@ -11,6 +10,7 @@ import { useState } from 'react';
 import {ContextData} from './components/CountContext/CountContext'
 import { Box } from '@mui/material';
 import Footer from './components/Footer';
+import Recent from './components/Recent';
 
 
 function App() {
@@ -22,8 +22,9 @@ function App() {
         <Box>
           <Navbar></Navbar>
           <Home></Home>
-          <Stacks></Stacks>
           <Services></Services>
+          <Stacks></Stacks>
+          <Recent></Recent>
           <Projects></Projects>
           <MobileProjects></MobileProjects>
           <Links></Links>

@@ -1,6 +1,4 @@
-import {Grid , Box, Stack, Button} from '@mui/material'
-import Laptop from './Laptop';
-import Profile from './Profile';
+import {Grid} from '@mui/material'
 import About from './About';
 import { useMediaQuery } from '@mui/material';
 import { useTheme } from '@mui/material/styles';

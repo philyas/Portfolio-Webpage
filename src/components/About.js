@@ -3,27 +3,31 @@ import {Grid , Box, Button} from '@mui/material'
 import { useRef } from 'react'
 import { useInView } from 'framer-motion'
 import Profile from './Profile'
-import GitHubIcon from '@mui/icons-material/GitHub';
-import {IconButton} from '@mui/material'
+
 
 function About() {
     const textRef = useRef(null)
+    const imageRef = useRef(null)
     const textInView = useInView(textRef, {once:true})
+    const imageInView = useInView(imageRef, {once:true})
 
     return (
         <div id='about'>
             <Grid container height={'100vh'} spacing={2}  overflow={'hidden'} alignItems={'center'} justifyContent={'center'}>
 
-                <Grid itrem lg={6}>
-                    <Profile></Profile>
+                <Grid item lg={6}>
+                    <Box ref={imageRef} style={{ 
+                            opacity: imageInView ? 1 : 0, transition: '2s 0.5s'}}>
+                      <Profile></Profile>
+                    </Box>
                 </Grid>
 
                 <Grid item lg={6}>
                     <Box     ref={textRef}
                         style={{
-                            transform: textInView ? "none" : "translateX(200px)",
+                            transform: textInView ? "none" : "translateX(100px)",
                             opacity: textInView ? 1 : 0,
-                            transition: '1s 0.5s',
+                            transition: '1s 1.5s',
                             padding:20,
                     }}  className={classes.aboutbox}>
                         <h2 style={{color:'#463b8a', textAlign:'center'}}>About Me</h2>

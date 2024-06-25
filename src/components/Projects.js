@@ -104,7 +104,7 @@ function Projects() {
 
 
     return(
-        <div id='projects' style={{textAlign:'center', marginTop:'20rem'}}>
+        <div id='projects' style={{textAlign:'center', marginTop:'5%'}}>
             <Box position={'relative'} width={'100%'} overflow='hidden' padding={3}>
                 <h1 className={classes.portfolioheader}>Web Apps</h1>
         

@@ -16,7 +16,7 @@ function StackItem({url,color1,color2, percentage, title}) {
         <Tooltip title={title}>
             <Box
             ref={ref}
-            borderRadius={3}
+            borderRadius={2}
             boxShadow={7}
             sx={{
                 background:`linear-gradient(45deg,${color1},${color2})`, 

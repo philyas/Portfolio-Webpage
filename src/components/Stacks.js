@@ -11,7 +11,11 @@ import appscript from './assets/google_script_apps_logo_icon_159351-removebg-pre
 import expologo from './assets/expo-removebg-preview.png'
 import python from './assets/python.png'
 import java from './assets/java.png'
-import javascript from './assets/javascript.png'
+import nestlogo from './assets/nestlogo.png'
+import javascriptlogo from './assets/jslogo.png'
+import rabbitmqlogo from './assets/rabbitmqlogo.png'
+import awslogo from './assets/awslogo.png'
+import ebaylogo from './assets/ebaylogo.png'
 
 function Stacks() {
     const stacks = [
@@ -28,6 +32,12 @@ function Stacks() {
         color1:"yellow",
         color2:"orange",
         percentage:90
+     },    {
+      title:"Nest.js",
+        name:nestlogo,
+        color1:"white",
+        color2:"white",
+        percentage:60
      },
      {
       title:"Expo/React Native",
@@ -59,7 +69,7 @@ function Stacks() {
      },
      {
       title:"JavaScript",
-        name:javascript,
+        name:javascriptlogo,
         color1:"white",
         color2:"white",
         percentage:90
@@ -72,11 +82,23 @@ function Stacks() {
         percentage:60
      },
      {
-      title:"Google App Script",
-        name:appscript,
-        color1:"beige",
+      title:"AWS",
+        name:awslogo,
+        color1:"white",
         color2:"white",
-        percentage:95
+        percentage:60
+     }, {
+      title:"Ebay",
+        name:ebaylogo,
+        color1:"white",
+        color2:"white",
+        percentage:60
+     }, {
+      title:"RabbitMQ",
+        name:rabbitmqlogo,
+        color1:"white",
+        color2:"white",
+        percentage:60
      },
      {
       title:"Python",
