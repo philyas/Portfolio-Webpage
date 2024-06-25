@@ -3,6 +3,8 @@ import {Grid , Box, Button} from '@mui/material'
 import { useRef } from 'react'
 import { useInView } from 'framer-motion'
 import Profile from './Profile'
+import {useTheme} from '@mui/material'
+import {useMediaQuery} from '@mui/material'
 
 
 function About() {
@@ -11,9 +13,13 @@ function About() {
     const textInView = useInView(textRef, {once:true})
     const imageInView = useInView(imageRef, {once:true})
 
+
+    const theme = useTheme();
+    const isLgUp = useMediaQuery(theme.breakpoints.up('lg'));
+
     return (
         <div id='about'>
-            <Grid container height={'100vh'} spacing={2}  overflow={'hidden'} alignItems={'center'} justifyContent={'center'}>
+            <Grid container height={isLgUp? '100vh' : 'auto'} spacing={2}  overflow={'hidden'} alignItems={'center'} justifyContent={'center'}>
 
                 <Grid item lg={6}>
                     <Box ref={imageRef} style={{ 
@@ -37,7 +43,9 @@ function About() {
 
 <p>My personal projects include a patient management app, webpages, an employee time tracker etc. Whether working independently or as part of a team, I am confident in my ability to contribute to any project and to deliver results.</p>
                     <Button variant='contained' sx={{background:'#463b8a'}}>
-                        Contact Me
+                        <a href="#contact">
+                            Contact Me
+                        </a>
                     </Button>
                  
                     </Box>

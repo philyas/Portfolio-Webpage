@@ -20,3 +20,10 @@
 .aboutbox h2 {
     font-family: "Abril Fatface", serif;
 }
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    padding: 4px;
+}

@@ -24,7 +24,7 @@
     width: 0;
     bottom: -3px;
     left: 0;
-    background: #000000;
+    background: rgb(117, 117, 117);
     transition: 0.4s;
 }
 
