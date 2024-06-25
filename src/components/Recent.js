@@ -1,8 +1,9 @@
 // src/components/VideoPlayer.js
 import React from 'react';
-import { Box, Typography, Card, CardContent, Grid, Button } from '@mui/material';
+import { Box, Grid, Button } from '@mui/material';
 import classes from './Recent.module.css'
-import eule from './assets/eulelogo.png'
+import cert2 from './assets/cert2.png'
+import cert3 from './assets/cert3.png'
 
 const Recent = () => {
   return (
@@ -29,16 +30,14 @@ const Recent = () => {
                     <Box sx={{ flex: 1 , padding:1}}>
                         <h2>Wonder Stories</h2>
                         <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem. ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem.
                         </p>
                     </Box>
                    
                     <Box sx={{ display: 'flex', flexDirection:'column', alignItems:'center', justifyContent: 'center', mb: 2 }}>
-                        <Box sx={{ display: 'flex', width:120, justifyContent: 'center', mb: 2 }}>
-                            <img style={{width:'100%'}} src={eule}></img>
-                        </Box>
-                        <Button variant='contained' color="secondary">
-                            Download
+                       
+                        <Button variant='contained' color="warning">
+                            <a className={classes.download} href='https://wonderstories.onelink.me/3ltl/duwq7cx1'>Download</a> 
                         </Button>
                     </Box>
                 </Box>
@@ -49,7 +48,18 @@ const Recent = () => {
           <Box className={classes.header} sx={{marginTop:'5%',flexDirection:'column', width:'100%', display:'flex', justifyContent:'center', alignItems:'center'}}>
           <Box className={classes.card}>
                   <Box sx={{width:260, height:450, background:'linear-gradient(140deg, rgb(247, 229, 255), rgb(37, 8, 44))'}}>
-
+                    <Box sx={{ flex: 1 , gap:2, flexDirection:'column', padding:1, display:'flex', justifyContent:'center', alignItems:'center'}}>
+                          <h2>App Certificates</h2>
+                                   
+                          <Box width={190}>
+                              <img width={'100%'} src={cert2} ></img>
+                          </Box>
+                           
+                          <Box width={190}>
+                              <img width={'100%'} src={cert3} ></img>
+                          </Box>
+                    
+                      </Box>
                   </Box>
               </Box>
             </Box>

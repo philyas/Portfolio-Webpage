@@ -16,6 +16,8 @@ import javascriptlogo from './assets/jslogo.png'
 import rabbitmqlogo from './assets/rabbitmqlogo.png'
 import awslogo from './assets/awslogo.png'
 import ebaylogo from './assets/ebaylogo.png'
+import stripelogo from './assets/stripelogo.png'
+
 
 function Stacks() {
     const stacks = [
@@ -94,25 +96,18 @@ function Stacks() {
         color2:"white",
         percentage:60
      }, {
+      title:"Stripe Payments",
+        name:stripelogo,
+        color1:"white",
+        color2:"white",
+        percentage:80
+     },
+     {
       title:"RabbitMQ",
         name:rabbitmqlogo,
         color1:"white",
         color2:"white",
         percentage:60
-     },
-     {
-      title:"Python",
-        name:python,
-        color1:"white",
-        color2:"white",
-        percentage:60
-     },
-     {
-      title:"Java",
-        name:java,
-        color1:"white",
-        color2:"white",
-        percentage:40
      }
     ]
 
@@ -120,7 +115,7 @@ function Stacks() {
       <div id='mystacks' style={{ textAlign:'center'}}>
         <h1 className={classes.stacks}>Skills</h1>
         <Grid container padding={3} gap={2} display={'flex'} alignItems={'center'} justifyContent={'center'}>
-           {stacks.map((item,index)=> <Grid item p={5} key={index} alignItems={'center'} justifyContent={'center'} display='flex'> 
+           {stacks.map((item,index)=> <Grid xs={4} sm={3} lg={2} item p={2} key={index} alignItems={'center'} justifyContent={'center'} display='flex'> 
                     <StackItem title={item.title} percentage={item.percentage} url={item.name} color1={item.color1} color2={item.color2}></StackItem>
            </Grid> )}
         </Grid>
