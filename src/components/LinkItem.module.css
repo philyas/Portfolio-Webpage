@@ -2,3 +2,9 @@
 .title {
     font-family: "Abril Fatface", serif;
 }
+
+.content {
+    color: rgb(137, 109, 145);
+    font-family: "Roboto",sans-serif;
+    font-weight: 200;
+}

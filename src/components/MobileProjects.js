@@ -18,13 +18,13 @@ function MobileProjects() {
    
 
     const projects = [
-        {title:'Employee timetracker',name:iphone, app: [timetracker_4,timetracker_2, timetracker_3, timetracker]},
+        {title:'Employee timetracker',name:iphone, app: [timetracker,timetracker_2, timetracker_3, timetracker_4]},
         {title:'Employee accounting tracker',name:iphone, app:[nailtracker_5, nailtracker, nailtracker_2, nailtracker_3, nailtracker_4]},
-        {title:'Appointment booking',name:iphone, app:[booking, booking_2]},
+        {title:'Appointment booking',name:iphone, app:[booking_2, booking]},
     ]
 
     return(
-        <div style={{marginTop:'25rem', textAlign:'center'}}>
+        <div style={{marginTop:'10%', textAlign:'center'}}>
         <h1 className={classes.header}>Mobile Apps</h1>
         <p style={{color:'gray', fontSize:'18px'}}>Click &#x2193;and &#x2191; to scroll</p>
         <Grid  gap={15} container style={{alignItem:'center', justifyContent:'center'}}>
