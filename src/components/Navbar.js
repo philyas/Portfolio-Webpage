@@ -48,7 +48,7 @@ function Navbar() {
       transition: "all 0.2s",
       background: 'white',
       width:'100%',
-      zIndex:1,
+      zIndex:3,
       left:0,
       padding:0,
       boxShadow:shadow
@@ -73,7 +73,7 @@ function Navbar() {
                 {windowSize[0] > 800 ?  <Grid item md={4} alignItems={'center'} justifyContent={'center'}>
                   <Box alignItems={'center'} justifyContent={'center'}>
                       <ul className={classes.list} >
-                        <a  href='#home'><li style={styles.listitem}>HOME</li></a>
+                        <a  href='#about'><li style={styles.listitem}>HOME</li></a>
                         <a href='#about'><li style={styles.listitem} >ABOUT</li></a>  
                         <a href='#mystacks'><li style={styles.listitem}>STACK</li></a>
                         <a href='#projects'><li style={styles.listitem}>PROJECTS</li></a>
@@ -89,7 +89,7 @@ function Navbar() {
                           open={open}
                           onClose={()=> setOpen(false)} >
                           <ul className={classes.listmobile}>
-                              <a   href='#home' onClick={()=> setOpen(false)}><li style={styles.listitem}>Home</li></a>
+                              <a   href='#imageprofile' onClick={()=> setOpen(false)}><li style={styles.listitem}>Home</li></a>
                               <a href='#about' onClick={()=> setOpen(false)} ><li style={styles.listitem} >About</li></a>  
                               <a href='#mystacks' onClick={()=> setOpen(false)}><li style={styles.listitem}>Stacks</li></a>
                               <a href='#projects' onClick={()=> setOpen(false)}><li style={styles.listitem}>Portfolio</li></a>

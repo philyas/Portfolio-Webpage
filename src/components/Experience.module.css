@@ -1,0 +1,31 @@
+.header {
+    margin-top: 10%;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin: 1em;
+    font-weight: 800;
+    text-align: center;
+    font-family: "Abril Fatface", serif;
+    color: #463b8a;
+}
+
+
+ p {
+    font-family: "Playfair Display", serif;
+   font-size: 18px;
+   font-weight: 400;
+   color: rgb(2, 2, 2);
+}
+
+h2 {
+    font-family: "Abril Fatface", serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    padding: 4px;
+}

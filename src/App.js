@@ -11,7 +11,7 @@ import {ContextData} from './components/CountContext/CountContext'
 import { Box } from '@mui/material';
 import Footer from './components/Footer';
 import Recent from './components/Recent';
-
+import Experience from './components/Experience';
 
 function App() {
   const [count,setCount] = useState(0)
@@ -24,6 +24,7 @@ function App() {
           <Home></Home>
           <Services></Services>
           <Stacks></Stacks>
+          <Experience></Experience>
           <Recent></Recent>
           <Projects></Projects>
           <MobileProjects></MobileProjects>

@@ -13,9 +13,6 @@
     color: rgb(82, 82, 82) !important;
 }
 
-.list a {
-    text-decoration: none;
-}
 
 .list li::after {
     position: absolute;
@@ -31,6 +28,14 @@
 .list li:hover::after {
     width: 100%;
 }
+
+
+
+.list a {
+    text-decoration: none;
+}
+
+
 
 .listmobile {
     padding:0 4rem;
