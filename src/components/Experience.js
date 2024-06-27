@@ -28,7 +28,7 @@ export default function Experience() {
                     <Box ref={imageRef} sx={{ 
                            width: {xl:700, lg:550, md:600, sm:400,xs:250},
                            position:'relative',
-                            opacity: imageInView ? 1 : 0, transition: '2s 0.5s'}}>
+                            opacity: imageInView ? 1 : 0, transition: '2s'}}>
                                 
                          <img style={{width:'100%', zIndex:2,position:'absolute', filter:'drop-shadow(10px 20px 8px black)',  left:'30%', bottom:'30%'}} src={code1}></img>
                          <img style={{width:'100%',filter:'drop-shadow(10px 20px 8px black)'}} src={code2}></img>
@@ -40,7 +40,7 @@ export default function Experience() {
                         style={{
                             transform: textInView ? "none" : "translateX(100px)",
                             opacity: textInView ? 1 : 0,
-                            transition: '1s 1.5s',
+                            transition: '1s',
                             padding:20,
                     }}  className={classes.aboutbox}>
                    

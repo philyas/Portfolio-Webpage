@@ -30,7 +30,7 @@ const Recent = () => {
                     <Box sx={{ flex: 1 , padding:1}}>
                         <h2>Wonder Stories</h2>
                         <p>
-                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem. ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                        Discover the magic of AI-generated children's stories! With Wonder Stories, simply speak your story prompt, and our AI will create a unique tale narrated in a lifelike voice. Choose from various languages and enjoy endless enchanting adventures. Perfect for bedtime, car rides, and sparking imagination! The following story is generated from our user.
                         </p>
                     </Box>
                    
