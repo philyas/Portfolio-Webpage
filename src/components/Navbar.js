@@ -70,7 +70,7 @@ function Navbar() {
                       <Avatar sx={{ background:'lightgray' }}>PN</Avatar>
                     </Box>
                 </Grid>
-                {windowSize[0] > 800 ?  <Grid item md={4} alignItems={'center'} justifyContent={'center'}>
+                {windowSize[0] > 1200 ?  <Grid item md={4} alignItems={'center'} justifyContent={'center'}>
                   <Box alignItems={'center'} justifyContent={'center'}>
                       <ul className={classes.list} >
                         <a  href='#about'><li style={styles.listitem}>HOME</li></a>
