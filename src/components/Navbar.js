@@ -75,8 +75,9 @@ function Navbar() {
                       <ul className={classes.list} >
                         <a  href='#about'><li style={styles.listitem}>HOME</li></a>
                         <a href='#about'><li style={styles.listitem} >ABOUT</li></a>  
+                        <a href='#recent'><li style={styles.listitem}>PROJECTS</li></a>
                         <a href='#mystacks'><li style={styles.listitem}>STACK</li></a>
-                        <a href='#projects'><li style={styles.listitem}>PROJECTS</li></a>
+                  
                         <a href='#contact'><li style={styles.listitem}>CONTACT</li></a>
                  
                       </ul>
@@ -91,8 +92,9 @@ function Navbar() {
                           <ul className={classes.listmobile}>
                               <a   href='#imageprofile' onClick={()=> setOpen(false)}><li style={styles.listitem}>Home</li></a>
                               <a href='#about' onClick={()=> setOpen(false)} ><li style={styles.listitem} >About</li></a>  
+                              <a href='#recent' onClick={()=> setOpen(false)}><li style={styles.listitem}>Portfolio</li></a>
                               <a href='#mystacks' onClick={()=> setOpen(false)}><li style={styles.listitem}>Stacks</li></a>
-                              <a href='#projects' onClick={()=> setOpen(false)}><li style={styles.listitem}>Portfolio</li></a>
+
                               <a href='#contact' onClick={()=> setOpen(false)}><li style={styles.listitem}>Contact</li></a>
                           </ul>
                         </Drawer>

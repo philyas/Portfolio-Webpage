@@ -8,7 +8,7 @@ import cert3 from './assets/cert3.png'
 const Recent = () => {
   return (
     <Box className={classes.header} sx={{display:'flex', marginTop:'5%', flexDirection:'column', justifyContent:'center', alignItems:'center'}}>
-        <h1>
+        <h1 id='recent'>
               Recent Project
         </h1>
           

@@ -133,7 +133,7 @@ function ProjectItem({source,images,title, description, url, stacks}) {
                 ref={ref} onClick={openHandler} className={classes.box} sx={{ position:'relative', 
                 width:{xs:300, sm:500, lg:600}
                 , height:{md:275, lg:327}}}   alignItems={'center'} justifyContent={'center'}>
-                    <h1 style={{margin:0, position:'absolute', left:'50%', top:'50%', transform:'translate(-50%,-50%)'}}>View Project</h1>
+                    <h1 style={{margin:0, color:'white', textShadow:'0 0 7px  black', position:'absolute', left:'50%', top:'50%', transform:'translate(-50%,-50%)'}}>View Project</h1>
                   <Box sx={itemStyle} >
                      <img className={classes.boximg} alt='projectitem' width={'100%'} height={'auto'} src={source}></img>
                   </Box>
